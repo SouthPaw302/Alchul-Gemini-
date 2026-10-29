@@ -1,0 +1,6 @@
+{
+  "name": "Alchul — Canonical Universe Codex & Reconstructed Deep-Time History",
+  "description": "Interactive canon repository, deep-time timeline, species evolutionary biology, and settlement reconstructions for the Alchul universe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
