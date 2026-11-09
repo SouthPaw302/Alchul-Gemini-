@@ -404,11 +404,11 @@ export const VirtualWorldCanvas: React.FC<VirtualWorldCanvasProps> = ({
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
           <span className="font-serif font-bold text-xs text-amber-100 uppercase tracking-wider">
-            {activeEnvironment === 'surface' ? 'The Braided Reach (~75 Ma)' : 'Deep Earth Sanctuary (Present / Reelfoot)'}
+            {activeEnvironment === 'surface' ? 'Braided Reach prototype (date provisional)' : 'Deep-Earth prototype (later-era fiction)'}
           </span>
         </div>
         <div className="text-[11px] font-mono text-stone-400">
-          Avatar: <strong className="text-amber-300">Sen (Appalachian Maniraptoran)</strong> • WASD to Walk
+          Study avatar: <strong className="text-amber-300">illustrative anatomy, not definitive</strong> • WASD to Walk
         </div>
       </div>
     </div>
