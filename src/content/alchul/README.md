@@ -43,3 +43,13 @@ The next creative focus is no longer only archaeological chronology: **what it i
 - `WRITING/PERSPECTIVES_01_THE_SAME_CHAMBER.md` — one event told by external observer, resident, witness and later descendant.
 
 **Status:** exploratory lore and narrative, **not canon promotion**. Actual Alchul viewpoint remains unknowable. The interactive 3D console now offers Outside / Resident / Contact Reports lenses with an **approximate body-height resident camera**, and removes a previously misleading literal “Alchul core” and unsupported incubation precision. Its scene geometries and sensory representation remain provisional; the implementation has not yet been runtime/build verified.
+
+## Mature surface individual and working 3D anatomy (2026-11-09)
+
+The next inside-out study is **Tesh**, a deliberately provisional adult surface reader. Relevant files:
+
+- `RESEARCH/MATURE_SURFACE_BODY_EVIDENCE.md` — comparative biomechanics, feathers, hands, respiration, sensory analogy and late egg retention, with uncertainty gates;
+- `LORE/INDIVIDUAL_01_TESH_BODY_AND_LIFE.md` — individual profile, nonhuman body, social relationships and five lived contexts;
+- `WRITING/SCENE_03_FIVE_DISTANCES_AROUND_TESH.md` — five scenes from external observation through work, nursery, disagreement and contact testimony.
+
+The interactive 3D implementation is in the companion console at `src/components/MatureSurfaceBodyLab.tsx`, integrated into the **Species & Morphology** view. It has inspectable articulated geometry, profile/head-on/overhead cameras, structural and surface views, five task scenes, and labels that mark proposed physical traits. `src/data/speciesData.ts` was corrected to remove unjustified exact population dimensions and anatomical certainty. This is **source-level implementation**; runtime/build testing has not been completed. `CANON.md` is unchanged.
