@@ -184,22 +184,18 @@ export function buildSurfaceEnvironment(): EnvironmentBuildResult {
   vaultMesh.castShadow = true;
   nurseryGroup.add(vaultMesh);
 
-  // Warm thermal vent glow from incubation chambers
+  // Non-diegetic study illumination: no assumed natural thermal vent at this location
   const nurseryLight = new THREE.PointLight(0xf59e0b, 1.5, 15);
   nurseryLight.position.set(0, 1, 0);
   nurseryGroup.add(nurseryLight);
 
-  // Model eggs in nest
+  // A single schematic sample, NOT a canon clutch count, egg shape, or shell chemistry.
   const eggGeo = new THREE.SphereGeometry(0.35, 12, 12);
   eggGeo.scale(0.8, 1.4, 0.8);
-  const eggMat = new THREE.MeshStandardMaterial({ color: 0xfef3c7, roughness: 0.4 });
-  for (let e = 0; e < 6; e++) {
-    const egg = new THREE.Mesh(eggGeo, eggMat);
-    const angle = (e / 6) * Math.PI * 2;
-    egg.position.set(Math.cos(angle) * 1.8, 0.3, Math.sin(angle) * 1.8);
-    egg.rotation.z = 0.3;
-    nurseryGroup.add(egg);
-  }
+  const eggMat = new THREE.MeshStandardMaterial({ color: 0xfef3c7, roughness: 0.75 });
+  const eggStudy = new THREE.Mesh(eggGeo, eggMat);
+  eggStudy.position.set(0, 0.4, 0);
+  nurseryGroup.add(eggStudy);
 
   group.add(nurseryGroup);
 
@@ -209,8 +205,8 @@ export function buildSurfaceEnvironment(): EnvironmentBuildResult {
     position: new THREE.Vector3(50, 4.5, -20),
     district: 'Nursery & Incubation Grounds (C)',
     category: 'Reproductive Biology',
-    shortDesc: 'Thermal incubation chambers maintaining 32°C for the final 25% of development.',
-    lore: 'Embryos develop internally for approximately 75% of gestation before hard shells are laid here for final acoustic conditioning and hatching.',
+    shortDesc: 'Proposed protected incubation grounds; temperature, oxygen, clutch and shell details remain unresolved.',
+    lore: 'Canon fixes approximately 75% internal embryonic development before external incubation at peak surface age. This prototype models no exact setpoint, egg count or shell chemistry.',
     actionPrompt: 'Inspect internal egg retention vaults'
   });
 
@@ -304,43 +300,33 @@ export function buildSurfaceEnvironment(): EnvironmentBuildResult {
     contactGroup.add(pillar);
   }
 
-  // Central Alchul boundary resonance node
-  const alchulCoreGeo = new THREE.OctahedronGeometry(1.2, 0);
-  const alchulCoreMat = new THREE.MeshStandardMaterial({
-    color: 0xa855f7,
-    emissive: 0x9333ea,
-    emissiveIntensity: 1.5,
-    roughness: 0.1,
-    metalness: 0.9,
-    wireframe: true,
+  // Physical record markers only. Alchul has no confirmed visible body, shape, or apparatus.
+  const witnessMaterial = new THREE.MeshStandardMaterial({
+    color: 0x9ca3af,
+    roughness: 0.94,
+    metalness: 0,
   });
-  const alchulCore = new THREE.Mesh(alchulCoreGeo, alchulCoreMat);
-  alchulCore.position.y = 2.2;
-  contactGroup.add(alchulCore);
-
-  const alchulLight = new THREE.PointLight(0xa855f7, 2.0, 20);
-  alchulLight.position.y = 2.2;
-  contactGroup.add(alchulLight);
-
-  animatables.push({
-    update: (_, elapsed) => {
-      alchulCore.rotation.x = elapsed * 0.5;
-      alchulCore.rotation.y = elapsed * 0.8;
-      alchulLight.intensity = 1.8 + Math.sin(elapsed * 3) * 0.5;
-    }
-  });
+  for (let markerIndex = 0; markerIndex < 3; markerIndex++) {
+    const witnessMarker = new THREE.Mesh(
+      new THREE.BoxGeometry(0.12, 0.12, 1.6),
+      witnessMaterial
+    );
+    witnessMarker.position.set((markerIndex - 1) * 1.0, 0.1, 0);
+    witnessMarker.rotation.y = markerIndex * 0.25;
+    contactGroup.add(witnessMarker);
+  }
 
   group.add(contactGroup);
 
   hotspots.push({
     id: 'contact-enclosure',
-    name: 'Alchul Boundary Interface Node',
+    name: 'Controlled-Contact Observation Ground',
     position: new THREE.Vector3(70, 5.5, 10),
-    district: 'Controlled-Contact Enclosure (H)',
-    category: 'Non-Local Perception',
-    shortDesc: 'Acoustically isolated stone perimeter where observers test localized temporal perception.',
-    lore: 'Here, observers in Harvest-altered states first verified convergent glimpses of the coming planetary impact and began preparing the Long Descent.',
-    actionPrompt: 'Attune to localized temporal displacement'
+    district: 'Interpretive Contact Study (H)',
+    category: 'Contested Perception',
+    shortDesc: 'Proposed observation enclosure where witnesses compare reports with environmental evidence.',
+    lore: 'The meaning of Alchul-linked impressions remains debated, and the apparatus is an illustrative working model. No visible object here depicts Alchul, and no impact prophecy is fixed to this surface scene.',
+    actionPrompt: 'Compare independent testimony and material signs'
   });
 
   // 9. Cretaceous Flora: Metasequoia conifers and giant ferns
