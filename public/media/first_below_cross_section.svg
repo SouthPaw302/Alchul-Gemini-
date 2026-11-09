@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+<title id="title">Alchul: First Below, two-scale conceptual Late Cretaceous margin cross-section</title>
+<desc id="desc">Upper panel depicts an unscaled northwestern Ozark Paleozoic carbonate margin grading toward a southeast Mississippi Embayment Cretaceous sediment wedge. Lower panel shows a deliberately hypothetical spring-margin chamber with independent air routes to be tested, groundwater flow, and a proposed elevated nursery. Neither panel maps a real ancient cave.</desc>
+<defs>
+ <pattern id="beds" width="28" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)"><line x1="0" y1="15" x2="28" y2="15" stroke="#66877f" stroke-opacity=".32" stroke-width="2"/></pattern>
+ <pattern id="sand" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.6" fill="#bc9365" opacity=".45"/><circle cx="11" cy="10" r="1.4" fill="#bc9365" opacity=".4"/></pattern>
+ <pattern id="water" width="14" height="12" patternUnits="userSpaceOnUse"><path d="M0 5q3 -3 7 0t7 0" fill="none" stroke="#2d86b9" stroke-width="1" opacity=".26"/></pattern>
+ <marker id="arr" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0L9 4L0 8Z" fill="#3479a3"/></marker>
+ <marker id="arrAmber" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0L9 4L0 8Z" fill="#bb7538"/></marker>
+ <marker id="arrWhite" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0L9 4L0 8Z" fill="#4b6c6b"/></marker>
+ <style>
+ .t{font-family:Inter,Arial,sans-serif;fill:#132c33}.head{font-size:36px;font-weight:750;letter-spacing:-.5px}.sub{font-size:17px;fill:#52686b}.section{font-size:22px;font-weight:760}.lab{font-size:18px;font-weight:720}.small{font-size:14px;fill:#41585b}.tiny{font-size:12px;fill:#51666b}.note{font-size:14px;font-weight:600;fill:#7b5c35}.panel{fill:#fcfaf5;stroke:#d5ded8;stroke-width:2}.hypo{stroke:#af6949;stroke-width:3;stroke-dasharray:9 7;fill:none}.arrow{fill:none;stroke:#3479a3;stroke-width:3;marker-end:url(#arr)}.route{fill:none;stroke:#bb7538;stroke-width:3.5;stroke-dasharray:8 9;marker-end:url(#arrAmber)}.leader{fill:none;stroke:#516b70;stroke-width:1.6}.rock{fill:#bcd1c8;stroke:#66877f;stroke-width:2}.sediment{fill:#edd7b8;stroke:#b98d60;stroke-width:1.5}
+ </style>
+</defs>
+<rect width="1440" height="1080" fill="#f1f3ef"/>
+<rect x="0" y="0" width="1440" height="102" fill="#142e37"/>
+<text x="60" y="52" font-size="31" font-weight="750" font-family="Inter,Arial,sans-serif" fill="#fff">THE FIRST BELOW</text>
+<text x="60" y="79" font-size="16" font-family="Inter,Arial,sans-serif" fill="#bfcdd0">Geological corridor study · Late Cretaceous scenario · NOT TO SCALE</text>
+<rect x="1060" y="30" rx="16" width="315" height="43" fill="#f5dfbb"/>
+<text x="1217" y="57" text-anchor="middle" class="note" font-size="15">HYPOTHETICAL HABITAT</text>
+
+<rect class="panel" x="42" y="123" width="1356" height="402" rx="18"/>
+<text x="72" y="162" class="section t">A · Regional corridor concept</text>
+<text x="72" y="186" class="small t">Northwest: Ozark-margin bedrock   →   Southeast: northern Mississippi Embayment</text>
+<rect x="68" y="202" width="1300" height="280" rx="8" fill="#e7f0e9"/>
+<path d="M68 275C190 259 268 270 375 292C479 315 534 334 645 344C795 356 912 368 1043 392C1140 407 1250 400 1368 404L1368 482L68 482Z" fill="#bfd2c9"/>
+<path d="M68 275C190 259 268 270 375 292C479 315 534 334 645 344C795 356 912 368 1043 392C1140 407 1250 400 1368 404L1368 482L68 482Z" fill="url(#beds)"/>
+<path d="M345 292C447 302 520 304 645 321C784 330 895 349 1043 372C1162 390 1256 386 1368 385L1368 404C1250 400 1140 407 1043 392C912 368 795 356 645 344C534 334 479 315 375 292Z" fill="#edcda4" stroke="#b8905b" stroke-width="1.5"/>
+<path d="M345 292C447 302 520 304 645 321C784 330 895 349 1043 372C1162 390 1256 386 1368 385L1368 404C1250 400 1140 407 1043 392C912 368 795 356 645 344C534 334 479 315 375 292Z" fill="url(#sand)"/>
+<path d="M68 275C190 259 268 270 375 292C470 315 535 306 645 321C784 330 895 349 1043 372C1162 390 1256 386 1368 385" fill="none" stroke="#50745c" stroke-width="5"/>
+<path d="M1118 374C1210 369 1260 372 1368 370L1368 388C1250 387 1190 391 1118 390Z" fill="#92cce0" opacity=".7"/>
+<path d="M92 266q20 -29 40 0m18 -2q12 -21 28 -5m32 6q19 -31 34 -2m33 11q15 -23 31 0" fill="none" stroke="#557d5f" stroke-width="4" opacity=".8"/>
+<path d="M75 305L120 320L146 314L190 335L235 333L281 358L330 355L381 379L425 373L468 404L519 398L565 423L620 420L665 443" fill="none" stroke="#60887d" stroke-width="2" stroke-dasharray="8 8" opacity=".7"/>
+<path d="M1028 338C900 322 770 304 652 285C559 271 497 275 414 267" class="route"/>
+<g transform="translate(394 280)"><ellipse rx="24" ry="10" fill="#285059" stroke="#a66843" stroke-dasharray="6 4" stroke-width="3"/><circle cy="-4" cx="-2" r="4" fill="#f2d6a3"/></g>
+<path d="M388 268L347 227" class="leader"/><text x="187" y="218" class="lab t">Proposed spring-margin node</text>
+<text x="76" y="240" class="lab t">Rocky upland</text>
+<text x="710" y="251" class="lab t">Coastal-plain cover varies by date</text>
+<text x="1115" y="336" class="lab t">Shifting lowland</text>
+<text x="830" y="435" class="lab t">Paleozoic rock beneath</text>
+<text x="663" y="300" class="small t">Surface access route · proposed</text>
+<text x="76" y="505" class="small t">Established regionally: carbonate rocks overlapped by younger Cretaceous sediments.</text>
+<text x="925" y="505" class="small t">No modern relief or shoreline is backdated.</text>
+
+<rect class="panel" x="42" y="548" width="1356" height="422" rx="18"/>
+<text x="72" y="588" class="section t">B · Hypothetical spring-margin habitat</text>
+<text x="72" y="612" class="small t">Functional engineering test, not a fossil cave or surveyed section</text>
+<rect x="68" y="628" width="1300" height="305" rx="8" fill="#e6f0eb"/>
+<path d="M68 735C230 710 356 707 462 711C607 711 724 732 822 744C974 767 1119 780 1368 795L1368 933L68 933Z" fill="#bcd1c8" stroke="#688980" stroke-width="2"/>
+<path d="M68 735C230 710 356 707 462 711C607 711 724 732 822 744C974 767 1119 780 1368 795L1368 933L68 933Z" fill="url(#beds)"/>
+<path d="M927 762C1085 777 1200 786 1368 790L1368 795C1119 780 974 767 822 744Z" fill="#edcfaa" opacity=".8"/>
+<path d="M68 735C230 710 356 707 462 711C607 711 724 732 822 744C974 767 1119 780 1368 795" stroke="#66896a" fill="none" stroke-width="5"/>
+<path d="M68 880L1368 880" stroke="#397ba4" stroke-width="2" stroke-dasharray="9 6" opacity=".75"/>
+<path d="M68 880L1368 880L1368 933L68 933Z" fill="url(#water)" opacity=".75"/>
+<path d="M335 795C358 779 395 781 435 774C499 769 549 781 604 774C677 766 737 784 805 788C837 791 851 803 841 817C828 838 764 838 706 834L470 833C401 835 369 827 341 816Z" fill="#173c48" stroke="#ab6b49" stroke-width="3" stroke-dasharray="8 7"/>
+<path d="M320 711C327 731 345 752 345 794" class="hypo"/>
+<path d="M640 724C646 744 656 758 660 777" class="hypo"/>
+<path d="M290 692C306 732 300 769 321 805" class="arrow" opacity=".85"/>
+<path d="M155 726C162 755 192 790 224 823C259 856 324 866 364 875" class="arrow"/>
+<path d="M765 856C864 851 908 856 976 834C1023 820 1040 792 1074 786" class="arrow"/>
+<path d="M825 885C922 884 1018 884 1100 877C1195 869 1244 854 1322 836" class="arrow"/>
+<path d="M460 794L610 794" stroke="#eac991" stroke-width="7" stroke-linecap="round"/>
+<path d="M600 802L679 802" stroke="#eac991" stroke-width="3" stroke-linecap="round"/>
+<rect x="510" y="780" rx="7" width="70" height="13" fill="#d28c70"/>
+<circle cx="563" cy="785" r="6" fill="#f0e6c6"/>
+<path d="M784 794L784 818" stroke="#cb9872" stroke-width="5"/>
+<path d="M798 796L818 810" stroke="#cb9872" stroke-width="4"/>
+<path d="M855 784L870 794" stroke="#a66a4d" stroke-width="4" stroke-dasharray="4 5"/>
+<path d="M500 762L480 681" class="leader"/><text x="390" y="665" class="lab t">Nursery shelf · proposed</text>
+<path d="M653 771L696 668" class="leader"/><text x="665" y="653" class="lab t">Air route B? · test</text>
+<path d="M330 784L260 672" class="leader"/><text x="83" y="655" class="lab t">Air route A? · test</text>
+<path d="M978 837L1075 708" class="leader"/><text x="1058" y="691" class="lab t">Spring outlet?</text>
+<text x="93" y="776" class="lab t">Recharge</text>
+<text x="868" y="819" class="small t">Separated work</text>
+<text x="868" y="835" class="small t">pocket?</text>
+<text x="101" y="899" class="small t">Saturated zone · conceptual</text>
+<text x="735" y="911" class="small t">Groundwater routes remain unverified</text>
+<text x="73" y="956" class="small t">Dashed brown features = invented candidates. Blue arrows = hypothetical flow directions.</text>
+<rect x="42" y="988" width="1356" height="67" rx="12" fill="#fff9ed" stroke="#ddc7a2" stroke-width="1.5"/>
+<text x="66" y="1016" class="lab t">Evidence boundary</text>
+<text x="66" y="1039" class="small t">Rock type and basin-margin relationships are regionally supported; cave openings, air paths, water table and settlement are NOT observed or dated.</text>
+</svg>
