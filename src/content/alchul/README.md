@@ -32,3 +32,14 @@ The first continuously occupied underground frontier after the peak surface civi
 - `RESEARCH/` — sourced real-world research
 - `WRITING/` — prose, chapters, scenes, drafts
 - `AGENT_BOOT.md` — required reading order for future agents
+
+## Inside-out civilization study — three lenses (2026-11-09)
+
+The next creative focus is no longer only archaeological chronology: **what it is like to inhabit the world as these people**, how their evolved bodies structure space, how multiple beliefs and moral traditions form, and how their descendants reinterpret history. Begin with:
+
+- `LORE/EMBODIED_WORLDVIEW_ATLAS.md` — outside anatomy / resident sensory life / Alchul-associated testimony, with era distinctions;
+- `LORE/BELIEF_HISTORY_ARCHETYPES.md` — candidate traditions, contested myths, ritual, kinship, seven story archetypes (not an approved pantheon);
+- `LORE/THREE_LENS_3D_STORYBOARD.md` — annotated 3D viewpoints and integrity rules for the interactive console;
+- `WRITING/PERSPECTIVES_01_THE_SAME_CHAMBER.md` — one event told by external observer, resident, witness and later descendant.
+
+**Status:** exploratory lore and narrative, **not canon promotion**. Actual Alchul viewpoint remains unknowable. The interactive 3D console now carries an explanatory lens overlay and removes a previously misleading literal “Alchul core” and unsupported incubation precision. Its scene geometries remain provisional.
