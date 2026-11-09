@@ -104,3 +104,9 @@ What humans measure as faulting, pressure, fluid movement, or unusual deep struc
 The early continuously occupied spring-margin foothold is now researched in `RESEARCH/FIRST_BELOW.md` and modeled provisionally in `WRITING/SETTLEMENT_02_FIRST_BELOW_WORKING_RECONSTRUCTION.md`.
 
 The **working** model is a small surface-supported, multigenerational habitat in marginal carbonate/fractured terrain, not a self-sufficient giant cavern beneath the Reelfoot Rift. Site, size, time, and exact methods remain open; these files do not silently promote their proposals into canon. Continue to distinguish early permanent occupation from the much later K–Pg survival transition.
+
+## First Below corridor and section — Phase 2 (2026-11-09)
+
+Regional working candidate: the southeastern Ozark carbonate margin adjoining the northern Mississippi Embayment (modern Cape Girardeau–Bollinger–northern Scott sector as a *research guide only*). Real evidence supports the old bedrock interface but does not verify an air-filled Late Cretaceous cave at any particular place. See `RESEARCH/FIRST_BELOW_CORRIDOR.md` and the two-scale schematic `MEDIA/FIRST_BELOW_CROSS_SECTION.svg`.
+
+**Canon gate:** the regional candidate, vent geometry, spring location and subsurface chamber remain hypothetical. The diagram does not depict a measured geological profile, and neither Cenozoic topography nor a modern Ozark cave can be projected directly into the Maastrichtian.
