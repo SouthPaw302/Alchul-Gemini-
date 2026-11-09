@@ -98,3 +98,9 @@ It remains one of the civilization's oldest ancestral regions.
 The modern seismic zone is linked in-universe to mature deep infrastructure integrated with ancient rift geology.
 
 What humans measure as faulting, pressure, fluid movement, or unusual deep structure may sometimes be the surface expression of systems whose function humans do not recognize.
+
+## First Below research checkpoint (2026-11-09)
+
+The early continuously occupied spring-margin foothold is now researched in `RESEARCH/FIRST_BELOW.md` and modeled provisionally in `WRITING/SETTLEMENT_02_FIRST_BELOW_WORKING_RECONSTRUCTION.md`.
+
+The **working** model is a small surface-supported, multigenerational habitat in marginal carbonate/fractured terrain, not a self-sufficient giant cavern beneath the Reelfoot Rift. Site, size, time, and exact methods remain open; these files do not silently promote their proposals into canon. Continue to distinguish early permanent occupation from the much later K–Pg survival transition.
