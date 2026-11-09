@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { EVOLUTIONARY_STAGES, ANATOMICAL_COMPARISON, EvolutionaryStage } from '../data/speciesData.ts';
+import { MatureSurfaceBodyLab } from './MatureSurfaceBodyLab.tsx';
 import { 
   Dna, 
   Eye, 
@@ -14,7 +15,7 @@ import {
   Flame
 } from 'lucide-react';
 
-export const MorphologyView: React.FC = () => {
+export const MorphologyView: React.FC<{ onOpenCodexDoc?: (path: string) => void }> = ({ onOpenCodexDoc }) => {
   const [selectedStageId, setSelectedStageId] = useState<string>('peak-surface');
   const [selectedSystem, setSelectedSystem] = useState<number>(0);
 
@@ -157,6 +158,10 @@ export const MorphologyView: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {currentStage.id === 'peak-surface' && (
+          <MatureSurfaceBodyLab onOpenCodexDoc={onOpenCodexDoc} />
+        )}
 
         {/* Anatomical Comparative Matrix Across Stages */}
         <div className="p-6 rounded-2xl border border-stone-800 bg-stone-900/30 space-y-4">
