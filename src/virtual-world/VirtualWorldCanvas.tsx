@@ -7,7 +7,7 @@ import { createManiraptoranCreature, CreatureController } from './creatureModel.
 import { soundEngine } from '../utils/audioEngine.ts';
 
 export type WorldEnvironmentType = 'surface' | 'deep-earth';
-export type CameraMode = 'scout' | 'drone' | 'orbit';
+export type CameraMode = 'scout' | 'resident' | 'drone' | 'orbit';
 export type TimeOfDay = 'noon' | 'dusk' | 'impact';
 
 interface VirtualWorldCanvasProps {
@@ -37,6 +37,7 @@ export const VirtualWorldCanvas: React.FC<VirtualWorldCanvasProps> = ({
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
+  const cameraModeRef = useRef<CameraMode>(cameraMode);
   const creatureRef = useRef<CreatureController | null>(null);
   const currentEnvDataRef = useRef<EnvironmentBuildResult | null>(null);
   const sunLightRef = useRef<THREE.DirectionalLight | null>(null);
@@ -172,7 +173,8 @@ export const VirtualWorldCanvas: React.FC<VirtualWorldCanvasProps> = ({
       const speed = isShift ? 12 : 6;
       let isMoving = false;
 
-      if (cameraMode === 'scout') {
+      const currentCameraMode = cameraModeRef.current;
+      if (currentCameraMode === 'scout' || currentCameraMode === 'resident') {
         let moveX = 0;
         let moveZ = 0;
 
@@ -209,7 +211,7 @@ export const VirtualWorldCanvas: React.FC<VirtualWorldCanvasProps> = ({
 
         // Update Creature Model
         if (creature) {
-          creature.mesh.visible = true;
+          creature.mesh.visible = currentCameraMode !== 'resident';
           creature.mesh.position.copy(playerPosRef.current);
           creature.mesh.rotation.y = THREE.MathUtils.damp(
             creature.mesh.rotation.y,
@@ -220,18 +222,32 @@ export const VirtualWorldCanvas: React.FC<VirtualWorldCanvasProps> = ({
           creature.update(delta, isMoving, speed);
         }
 
-        // Camera smoothly follows player in scout mode
-        const targetCamX = playerPosRef.current.x + Math.sin(playerRotationRef.current + Math.PI / 2) * 9;
-        const targetCamZ = playerPosRef.current.z + Math.cos(playerRotationRef.current + Math.PI / 2) * 9;
-        camera.position.x = THREE.MathUtils.damp(camera.position.x, targetCamX, 5, delta);
-        camera.position.y = THREE.MathUtils.damp(camera.position.y, playerPosRef.current.y + 4.5, 5, delta);
-        camera.position.z = THREE.MathUtils.damp(camera.position.z, targetCamZ, 5, delta);
-        controls.target.set(playerPosRef.current.x, playerPosRef.current.y + 1.2, playerPosRef.current.z);
-      } else if (cameraMode === 'drone') {
+        if (currentCameraMode === 'resident') {
+          // Embodied *illustrative* camera. True eye height/field of view remain unresolved.
+          camera.position.set(
+            playerPosRef.current.x,
+            playerPosRef.current.y + 2.1,
+            playerPosRef.current.z
+          );
+          camera.lookAt(
+            playerPosRef.current.x + Math.cos(playerRotationRef.current) * 8,
+            playerPosRef.current.y + 2.1,
+            playerPosRef.current.z - Math.sin(playerRotationRef.current) * 8
+          );
+        } else {
+          // External camera follows the illustrative body.
+          const targetCamX = playerPosRef.current.x + Math.sin(playerRotationRef.current + Math.PI / 2) * 9;
+          const targetCamZ = playerPosRef.current.z + Math.cos(playerRotationRef.current + Math.PI / 2) * 9;
+          camera.position.x = THREE.MathUtils.damp(camera.position.x, targetCamX, 5, delta);
+          camera.position.y = THREE.MathUtils.damp(camera.position.y, playerPosRef.current.y + 4.5, 5, delta);
+          camera.position.z = THREE.MathUtils.damp(camera.position.z, targetCamZ, 5, delta);
+          controls.target.set(playerPosRef.current.x, playerPosRef.current.y + 1.2, playerPosRef.current.z);
+        }
+      } else if (currentCameraMode === 'drone') {
         if (creature) creature.mesh.visible = true;
         // Drone controls allow free roaming camera
         controls.update();
-      } else if (cameraMode === 'orbit') {
+      } else if (currentCameraMode === 'orbit') {
         if (creature) creature.mesh.visible = true;
         controls.autoRotate = true;
         controls.autoRotateSpeed = 1.0;
@@ -270,6 +286,15 @@ export const VirtualWorldCanvas: React.FC<VirtualWorldCanvasProps> = ({
       }
     };
   }, []);
+
+  // The animation loop is created only once; read the latest camera mode through a ref.
+  useEffect(() => {
+    cameraModeRef.current = cameraMode;
+    if (controlsRef.current) {
+      controlsRef.current.enabled = cameraMode === 'drone' || cameraMode === 'orbit';
+      controlsRef.current.autoRotate = cameraMode === 'orbit';
+    }
+  }, [cameraMode]);
 
   // Update Environment (Surface vs Deep Earth)
   useEffect(() => {
