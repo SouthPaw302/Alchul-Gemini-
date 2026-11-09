@@ -12,7 +12,9 @@ Real-world facts are documented as research. Fictional history is layered on top
 
 ## Current focus
 
-The first population: a Late Cretaceous Appalachian maniraptoran/dromaeosaur-grade population living around the northern Mississippi Embayment / future New Madrid region.
+The first continuously occupied underground frontier after the peak surface civilization, before the final Long Descent. The founder population remains a Late Cretaceous Appalachian maniraptoran/dromaeosaur-grade lineage associated with the northern Mississippi Embayment / future New Madrid region.
+
+**Phase 1 completed (2026-11-09):** research-grounded constraints in `RESEARCH/FIRST_BELOW.md` and a nonbinding settlement model in `WRITING/SETTLEMENT_02_FIRST_BELOW_WORKING_RECONSTRUCTION.md`. No precise cave site or demographic scale has been promoted into locked canon.
 
 ## Repository layers
 
