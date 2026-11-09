@@ -2,7 +2,7 @@
 
 **Status:** working fictional reconstruction, **not locked canon**. Corresponding real-science analysis: `RESEARCH/FIRST_BELOW.md`. Read that file first.
 
-**Relative placement:** after the surface civilization has mastered large-scale environmental management, but before its later society begins the civilization-wide Long Descent. This is an early continuously occupied *frontier*, not a refuge built after the final K–Pg warning.
+**Relative placement:** after the surface civilization has mastered large-scale environmental management, but before its later society begins the civilization-wide Long Descent. This is an early continuously occupied *frontier*, not a refuge built after the final K–Pg warning. **Phase 3 test:** a tentative early–middle Maastrichtian (~70 Ma) scene in `RESEARCH/FIRST_BELOW_TIME_SLICE_70MA.md`; the date and exact cave remain *unratified working choices* and do not update canon.
 
 **Provisional name:** The Spring Margin. It is a descriptive working label, not an approved translation from the inhabitants' language.
 
