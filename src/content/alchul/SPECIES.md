@@ -103,3 +103,9 @@ Do not give them:
 - reptilian scales over the whole body
 
 Those features, if they ever appear, must emerge later through evolution or culture.
+
+## Mature surface descendant — explicit working model (2026-11-09)
+
+The founder body above does **not** describe a single unchanging anatomy through ~66 million years. Comparative biological constraints on a developed surface adult are in `RESEARCH/MATURE_SURFACE_BODY_EVIDENCE.md`, and a *nonbinding* individual named Tesh is explored in `LORE/INDIVIDUAL_01_TESH_BODY_AND_LIFE.md`. An annotated Three.js anatomical study of that character lives in the companion interactive console.
+
+The exact mature-surface size, weight, cranial proportions, tail reduction, digital opposition, respiratory anatomy, sensory-receptor organs, clutch count, egg shell chemistry and gender roles remain **undecided**. The 3D model is an articulated design hypothesis, not a recovered fossil or new species-wide anatomy. The locked ~75% egg-retention premise remains unchanged.
