@@ -42,4 +42,4 @@ The next creative focus is no longer only archaeological chronology: **what it i
 - `LORE/THREE_LENS_3D_STORYBOARD.md` — annotated 3D viewpoints and integrity rules for the interactive console;
 - `WRITING/PERSPECTIVES_01_THE_SAME_CHAMBER.md` — one event told by external observer, resident, witness and later descendant.
 
-**Status:** exploratory lore and narrative, **not canon promotion**. Actual Alchul viewpoint remains unknowable. The interactive 3D console now carries an explanatory lens overlay and removes a previously misleading literal “Alchul core” and unsupported incubation precision. Its scene geometries remain provisional.
+**Status:** exploratory lore and narrative, **not canon promotion**. Actual Alchul viewpoint remains unknowable. The interactive 3D console now offers Outside / Resident / Contact Reports lenses with an **approximate body-height resident camera**, and removes a previously misleading literal “Alchul core” and unsupported incubation precision. Its scene geometries and sensory representation remain provisional; the implementation has not yet been runtime/build verified.
