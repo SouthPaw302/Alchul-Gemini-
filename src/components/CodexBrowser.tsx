@@ -41,7 +41,7 @@ export const CodexBrowser: React.FC<CodexBrowserProps> = ({
   }, [selectedFileId]);
 
   const categories = useMemo(() => {
-    return ['All', 'Core Canon', 'Real Research', 'Chronicles & Prose', 'Project Archives', 'Authoritative Protocols'];
+    return ['All', 'Core Canon', 'Real Research', 'Working Lore', 'Chronicles & Prose', 'Project Archives', 'Authoritative Protocols'];
   }, []);
 
   const filteredFiles = useMemo(() => {
@@ -91,6 +91,7 @@ export const CodexBrowser: React.FC<CodexBrowserProps> = ({
     switch (cat) {
       case 'Core Canon': return <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />;
       case 'Real Research': return <Compass className="w-3.5 h-3.5 text-sky-400" />;
+      case 'Working Lore': return <Sparkles className="w-3.5 h-3.5 text-violet-400" />;
       case 'Chronicles & Prose': return <BookOpen className="w-3.5 h-3.5 text-emerald-400" />;
       case 'Project Archives': return <Archive className="w-3.5 h-3.5 text-purple-400" />;
       default: return <FileText className="w-3.5 h-3.5 text-stone-400" />;
