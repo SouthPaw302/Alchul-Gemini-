@@ -16,7 +16,9 @@ The first continuously occupied underground frontier after the peak surface civi
 
 **Phase 1 completed (2026-11-09):** research-grounded constraints in `RESEARCH/FIRST_BELOW.md` and a nonbinding settlement model in `WRITING/SETTLEMENT_02_FIRST_BELOW_WORKING_RECONSTRUCTION.md`.
 
-**Phase 2 corridor pass (2026-11-09):** selected a *working regional candidate* on the southeastern Ozark carbonate margin, documented evidence and uncertainties in `RESEARCH/FIRST_BELOW_CORRIDOR.md`, and drafted the deliberately unscaled `MEDIA/FIRST_BELOW_CROSS_SECTION.svg`. No actual Cretaceous cave site, shoreline, settlement size, or absolute date has been promoted into canon.
+**Phase 2 corridor pass (2026-11-09):** selected a *working regional candidate* on the southeastern Ozark carbonate margin, documented evidence and uncertainties in `RESEARCH/FIRST_BELOW_CORRIDOR.md`, and drafted the deliberately unscaled `MEDIA/FIRST_BELOW_CROSS_SECTION.svg`.
+
+**Phase 3 time-slice and chronicle (2026-11-09):** tested a provisional early–middle Maastrichtian window centered ~70 Ma in `RESEARCH/FIRST_BELOW_TIME_SLICE_70MA.md`, then wrote `WRITING/CHRONICLE_02_THE_SECOND_BREATH.md` as **nonbinding narrative**. No actual Cretaceous cave site, permanent-occupation date, storyline, shoreline, settlement population or exact subsurface anatomy has been promoted into canon.
 
 ## Repository layers
 
