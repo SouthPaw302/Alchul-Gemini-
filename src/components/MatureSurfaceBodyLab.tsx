@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { Compass, Eye, Hand, Waves, Wind, Footprints, Scan, RotateCcw, BookOpen, AlertCircle } from 'lucide-react';
+import { Eye, Scan, BookOpen, AlertCircle } from 'lucide-react';
 
 type Task = 'survey' | 'craft' | 'nursery' | 'council' | 'witness';
 type Region = 'whole' | 'head' | 'hands' | 'thorax' | 'pelvis' | 'tail' | 'feet' | 'sensors';
