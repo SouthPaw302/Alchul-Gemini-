@@ -85,7 +85,7 @@ export const MorphologyView: React.FC<{ onOpenCodexDoc?: (path: string) => void 
           <div className="flex flex-wrap items-center justify-between gap-4 border-b border-stone-800/80 pb-4">
             <div>
               <span className="text-xs font-mono text-amber-400 uppercase tracking-wide font-semibold">
-                Taxonomic Profile
+                Working Biological Profile
               </span>
               <h2 className="text-xl sm:text-2xl font-serif font-bold text-amber-100">
                 {currentStage.name}
@@ -130,7 +130,7 @@ export const MorphologyView: React.FC<{ onOpenCodexDoc?: (path: string) => void 
             <div className="p-4 rounded-xl border border-emerald-900/60 bg-emerald-950/20 space-y-2">
               <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 uppercase">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                Approved Morphology (MUST Depict)
+                Stage-Based Anatomical Requirements
               </div>
               <ul className="text-xs text-stone-300 space-y-1.5 leading-relaxed">
                 {currentStage.visualConstraints[0].replace('MUST depict: ', '').split(', ').map((c, i) => (
@@ -145,7 +145,7 @@ export const MorphologyView: React.FC<{ onOpenCodexDoc?: (path: string) => void 
             <div className="p-4 rounded-xl border border-rose-900/60 bg-rose-950/20 space-y-2">
               <div className="flex items-center gap-2 text-xs font-mono font-bold text-rose-400 uppercase">
                 <XCircle className="w-4 h-4 text-rose-400" />
-                Strict Visual Prohibitions (MUST NOT Depict)
+                Visual Rules & Exclusions
               </div>
               <ul className="text-xs text-stone-300 space-y-1.5 leading-relaxed">
                 {currentStage.visualConstraints[1].replace('MUST NOT depict: ', '').split(', ').map((c, i) => (
@@ -205,7 +205,7 @@ export const MorphologyView: React.FC<{ onOpenCodexDoc?: (path: string) => void 
 
             <div className="p-4 rounded-xl bg-stone-950 border border-amber-800/80 space-y-2 ring-1 ring-amber-500/20">
               <span className="text-[11px] font-mono text-amber-300 font-bold uppercase">
-                Peak Surface Form (~66 Ma)
+                Peak Surface Form (date open)
               </span>
               <p className="text-xs sm:text-sm text-stone-200 leading-relaxed">
                 {ANATOMICAL_COMPARISON[selectedSystem].peakSurfaceState}
