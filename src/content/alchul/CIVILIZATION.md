@@ -173,3 +173,9 @@ Rock-like vessels are portable habitats and displacement systems.
 The vessel is not merely a hull.
 
 It is a place capable of becoming somewhere else.
+
+## Three-lens worldview exploration (nonbinding, 2026-11-09)
+
+Detailed speculative ethnography now lives in `LORE/EMBODIED_WORLDVIEW_ATLAS.md` and `LORE/BELIEF_HISTORY_ARCHETYPES.md`; the designed educational 3D perspective modes are in `LORE/THREE_LENS_3D_STORYBOARD.md`, with a comparative four-voice story in `WRITING/PERSPECTIVES_01_THE_SAME_CHAMBER.md`.
+
+These papers propose roles, rituals, conflicting traditions and native sensory priorities. **No archetype, rite, religion, family structure, native word or Alchul interpretation in them is silently canonized.** Alchul's internal viewpoint remains unknown. We may dramatize residents' experiences and competing contact testimony, not claim to narrate Alchul's true motives.
