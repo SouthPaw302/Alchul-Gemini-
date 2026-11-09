@@ -76,7 +76,7 @@ Add an explicit codex link to this documentation, and label prototype imagery as
 
 ## Longer-term 3D implementation steps
 
-**Step 1 — Current:** readable three-lens POV notes and lore links integrated with existing virtual viewer; correct unsupported fixed details.
+**Step 1 — Implemented in source (runtime unverified):** readable three-lens POV notes and lore links integrated with existing virtual viewer; Outside selects following camera, Resident selects an approximate body-height camera, and Contact reports selects a free observer camera. Unsupported fixed incubation detail and a literal glowing Alchul object were removed. These remain editorial approximations, not actual nonhuman sensorium.
 
 **Step 2 — Body laboratory:** skeletal mass and locomotion studies for *founder vs peak working silhouette vs modern variant*, each with separate uncertainty legend and turn-around views. Fossil comparison anchors the founder; cultural evolution does not magically prescribe exact anatomy.
 
