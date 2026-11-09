@@ -32,6 +32,7 @@ const filesData = mdFiles.map(f => {
   // Categorize
   let category = 'Core Canon';
   if (f.path.startsWith('RESEARCH/')) category = 'Real Research';
+  else if (f.path.startsWith('LORE/')) category = 'Working Lore';
   else if (f.path.startsWith('WRITING/')) category = 'Chronicles & Prose';
   else if (f.path.startsWith('ARCHIVE/')) category = 'Project Archives';
   else if (f.name === 'AGENT_BOOT.md' || f.name === 'README.md') category = 'Authoritative Protocols';
@@ -52,7 +53,7 @@ export interface UniverseFile {
   path: string;
   filename: string;
   title: string;
-  category: 'Core Canon' | 'Real Research' | 'Chronicles & Prose' | 'Project Archives' | 'Authoritative Protocols';
+  category: 'Core Canon' | 'Real Research' | 'Working Lore' | 'Chronicles & Prose' | 'Project Archives' | 'Authoritative Protocols';
   content: string;
 }
 
