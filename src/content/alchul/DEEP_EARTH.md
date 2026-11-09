@@ -110,3 +110,9 @@ The **working** model is a small surface-supported, multigenerational habitat in
 Regional working candidate: the southeastern Ozark carbonate margin adjoining the northern Mississippi Embayment (modern Cape Girardeau–Bollinger–northern Scott sector as a *research guide only*). Real evidence supports the old bedrock interface but does not verify an air-filled Late Cretaceous cave at any particular place. See `RESEARCH/FIRST_BELOW_CORRIDOR.md` and the two-scale schematic `MEDIA/FIRST_BELOW_CROSS_SECTION.svg`.
 
 **Canon gate:** the regional candidate, vent geometry, spring location and subsurface chamber remain hypothetical. The diagram does not depict a measured geological profile, and neither Cenozoic topography nor a modern Ozark cave can be projected directly into the Maastrichtian.
+
+## First Below chronology and narrative — Phase 3 (2026-11-09)
+
+The **~70 Ma** candidate time slice is research-tested but not canonized. It places first continuous surface-supported occupation within a broad early–middle Maastrichtian context in which the McNairy sedimentary/drainage system was developing, with older carbonate-bearing bedrock at the Ozark margin. Regional geology is plausible; an actual air-filled cave at the proposed place and time remains unverified. See `RESEARCH/FIRST_BELOW_TIME_SLICE_70MA.md`.
+
+`WRITING/CHRONICLE_02_THE_SECOND_BREATH.md` is a seven-section nonbinding narrative experiment about a resident group's first full seasonal cycle, ventilation reversal, food dependency, and reproduction. The story does **not** establish the precise occupation date, historical characters, real cave, or first permanent institution. The final K–Pg migration remains a much later development.
