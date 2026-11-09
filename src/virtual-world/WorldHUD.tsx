@@ -110,6 +110,18 @@ export const WorldHUD: React.FC<WorldHUDProps> = ({
                   <span>Scout (WASD)</span>
                 </button>
                 <button
+                  onClick={() => onChangeCameraMode('resident')}
+                  className={`px-2.5 py-1.5 rounded-lg transition flex items-center gap-1 font-mono text-[11px] ${
+                    cameraMode === 'resident'
+                      ? 'bg-stone-800 text-stone-100 font-bold border border-stone-700'
+                      : 'text-stone-400 hover:text-stone-200'
+                  }`}
+                  title="Approximate body-height camera; not a reconstruction of exact species vision"
+                >
+                  <User className="w-3.5 h-3.5 text-sky-400" />
+                  <span>Body view</span>
+                </button>
+                <button
                   onClick={() => onChangeCameraMode('drone')}
                   className={`px-2.5 py-1.5 rounded-lg transition flex items-center gap-1 font-mono text-[11px] ${
                     cameraMode === 'drone'
