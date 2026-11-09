@@ -320,7 +320,7 @@ export default function App() {
           <TimelineView />
         )}
         {activeTab === 'morphology' && (
-          <MorphologyView />
+          <MorphologyView onOpenCodexDoc={handleOpenCodexDoc} />
         )}
         {activeTab === 'settlement' && (
           <SettlementView />
