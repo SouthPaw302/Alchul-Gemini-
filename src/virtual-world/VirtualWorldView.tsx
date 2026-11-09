@@ -78,7 +78,10 @@ export const VirtualWorldView: React.FC<VirtualWorldViewProps> = ({ onOpenCodexD
               key={option.id}
               type="button"
               aria-pressed={lens === option.id}
-              onClick={() => setLens(option.id)}
+              onClick={() => {
+                setLens(option.id);
+                setCameraMode(option.id === 'resident' ? 'resident' : option.id === 'testimony' ? 'drone' : 'scout');
+              }}
               className={`flex-1 px-2 py-1.5 rounded-md border text-[10px] sm:text-[11px] leading-tight font-medium transition ${lens === option.id ? 'border-amber-600 bg-amber-950 text-amber-100' : 'border-stone-800 bg-stone-900/80 text-stone-400 hover:text-stone-200'}`}
             >
               {option.label}
@@ -98,7 +101,7 @@ export const VirtualWorldView: React.FC<VirtualWorldViewProps> = ({ onOpenCodexD
             Open detailed biology, belief and worldview atlas
           </button>
         )}
-        <p className="text-[10px] text-stone-500">Interpretive notes only. Scene and camera stay unchanged when switching lenses.</p>
+        <p className="text-[10px] text-stone-500">Interpretive notes and approximate body-height/free cameras; environment stays the same. Not a simulation of exact species vision or Alchul's perspective.</p>
       </aside>
 
       <WorldHUD
