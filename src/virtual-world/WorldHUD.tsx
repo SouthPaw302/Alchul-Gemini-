@@ -80,7 +80,7 @@ export const WorldHUD: React.FC<WorldHUDProps> = ({
                   }`}
                 >
                   <Compass className="w-3.5 h-3.5 text-amber-400" />
-                  <span>The Braided Reach (75 Ma)</span>
+                  <span>Braided Reach (study)</span>
                 </button>
                 <button
                   onClick={() => onChangeEnvironment('deep-earth')}
@@ -163,7 +163,7 @@ export const WorldHUD: React.FC<WorldHUDProps> = ({
                     }`}
                   >
                     <Flame className="w-3.5 h-3.5 text-rose-400" />
-                    <span>66 Ma Flash</span>
+                    <span>Impact vignette</span>
                   </button>
                 </div>
               )}
@@ -213,7 +213,7 @@ export const WorldHUD: React.FC<WorldHUDProps> = ({
               <div className="space-y-2">
                 <div className="text-xs font-mono uppercase text-amber-400 font-bold flex items-center gap-1.5">
                   <BookOpen className="w-3.5 h-3.5" />
-                  Canonical Lore & Scientific Reconstruction
+                  Working Lore & Scientific Reconstruction
                 </div>
                 <p className="text-stone-300 text-xs sm:text-sm leading-relaxed">
                   {selectedHotspot.lore}
