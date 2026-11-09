@@ -14,7 +14,9 @@ Real-world facts are documented as research. Fictional history is layered on top
 
 The first continuously occupied underground frontier after the peak surface civilization, before the final Long Descent. The founder population remains a Late Cretaceous Appalachian maniraptoran/dromaeosaur-grade lineage associated with the northern Mississippi Embayment / future New Madrid region.
 
-**Phase 1 completed (2026-11-09):** research-grounded constraints in `RESEARCH/FIRST_BELOW.md` and a nonbinding settlement model in `WRITING/SETTLEMENT_02_FIRST_BELOW_WORKING_RECONSTRUCTION.md`. No precise cave site or demographic scale has been promoted into locked canon.
+**Phase 1 completed (2026-11-09):** research-grounded constraints in `RESEARCH/FIRST_BELOW.md` and a nonbinding settlement model in `WRITING/SETTLEMENT_02_FIRST_BELOW_WORKING_RECONSTRUCTION.md`.
+
+**Phase 2 corridor pass (2026-11-09):** selected a *working regional candidate* on the southeastern Ozark carbonate margin, documented evidence and uncertainties in `RESEARCH/FIRST_BELOW_CORRIDOR.md`, and drafted the deliberately unscaled `MEDIA/FIRST_BELOW_CROSS_SECTION.svg`. No actual Cretaceous cave site, shoreline, settlement size, or absolute date has been promoted into canon.
 
 ## Repository layers
 
